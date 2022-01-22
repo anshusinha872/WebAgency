@@ -77,3 +77,47 @@ nav ul li a:hover {
         padding: 0px 20px 15px 20px;
     }
 }
+/* banner */
+#banner{
+    min-height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./images/background-banner.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-text{
+    font-size: 50px;
+    text-transform: uppercase;
+    color: var(--main-white);
+    font-style: italic;
+    text-align: center;
+}
+.banner-underline{
+    width: 200px;
+    border-top: 3px solid var(--main-white);
+    margin: 0 auto 15px auto;
+    
+}
+.banner-btn{
+    display: flex;
+    justify-content: space-between;
+}
+.banner-btn button{
+    font-size: 30px;
+    padding: 10px;
+    text-transform: uppercase;
+    margin: 0 10px;
+    background:transparent;
+    color: var(--main-yellow);
+    border: 3px solid var(--main-yellow);
+    border-radius: 5px;
+}
+.banner-btn button:hover{
+    color: var(--main-black);
+    border: 3px solid var(--main-grey);
+    cursor: pointer;
+    background: var(--main-grey);
+}
