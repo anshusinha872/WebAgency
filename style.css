@@ -79,7 +79,7 @@ nav ul li a:hover {
 }
 /* banner */
 #banner{
-    min-height: 90vh;
+    min-height: calc(100vh - 69.8px);
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./images/background-banner.jpg);
     background-position: center;
     background-attachment: fixed;
@@ -121,3 +121,48 @@ nav ul li a:hover {
     cursor: pointer;
     background: var(--main-grey);
 }
+/* end of banner */
+/* skills */
+#skill{
+    padding: 60px 0;
+    background: var(--main-grey);
+}
+.skill-container{
+    max-width: 90vw;
+    margin: 0 auto;
+}
+.skill-item {
+    text-align: center;
+    margin: 20px 0;
+}
+.skill-item .fa{
+    font-size: 60px;
+    color: var(--main-black);
+}
+.skill-item h1{
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin:30px 0px;
+    color: var(--main-black);
+    text-transform: uppercase;
+}
+.skill-item p{
+    width: 75%;
+    margin: 0 auto;
+    color: var(--main-white);
+}
+@media screen and (min-width:576px) {
+    .skill-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1rem;
+    }
+}
+@media screen and (min-width:992px) {
+    .skill-container {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-column-gap: 5px ;
+    }
+}
+/* end of skills */
